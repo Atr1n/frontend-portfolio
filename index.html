@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Максим Огуров — Senior / Lead Frontend Developer. Шесть лет разработки на React и Vue, командная работа и AI-агенты.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#101017">
+  <title>Максим Огуров — Frontend Developer</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Максим Огуров, к началу">
+        <span class="monogram" aria-hidden="true">МО<span>.</span></span>
+        <span class="brand-name">Максим Огуров</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Меню</button>
+      <nav class="navigation" id="navigation" aria-label="Основная навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#experience">Опыт</a>
+        <a href="#skills">Навыки</a>
+        <a href="#agents">AI-агенты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Frontend Developer</p>
+        <h1 id="hero-title">Максим<br>Огуров<span>.</span></h1>
+        <p class="hero-description">Разрабатываю веб-приложения на React и Vue: от рабочих интерфейсов для финтеха до браузерных игр. Веду frontend-задачи, делаю ревью и пишу собственных AI-агентов.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Смотреть проекты</a>
+          <a class="button button-secondary" href="#skills">Мой стек</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-glass"><i></i><i></i><i></i></div>
+        <img src="./hero.webp" alt="" fetchpriority="high" width="1000" height="750">
+      </div>
+    </section>
+
+    <div class="container stat-bar" aria-label="Опыт в цифрах и специализациях">
+      <div class="stat"><strong>6 лет</strong><span>во frontend-разработке</span></div>
+      <div class="stat"><strong>React / Vue</strong><span>интерфейсы и интеграции с API</span></div>
+      <div class="stat"><strong>Senior / Lead</strong><span>ревью, менторство, ведение задач</span></div>
+    </div>
+
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Практика</p>
+          <h2 id="projects-title">Избранные проекты</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Фильтр проектов" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button type="button" data-filter="products" aria-pressed="false">Веб-приложения</button>
+          <button type="button" data-filter="ai" aria-pressed="false">AI</button>
+          <button type="button" data-filter="games" aria-pressed="false">Игры</button>
+        </div>
+      </div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <div class="project-grid">
+        <article class="project" data-category="products">
+          <div class="project-art art-fintech" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="mock-window">
+              <div class="mock-toolbar"><i></i><i></i><i></i></div>
+              <div class="mock-steps"><b></b><b></b><b></b><b></b></div>
+              <div class="mock-table"><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">FinTech</p>
+            <h3>Кредитный конвейер</h3>
+            <p>Разрабатывал frontend для обработки кредитных заявок и связывал этапы работы с данными из API.</p>
+            <button class="case-button" type="button" data-case="credit" hidden>О проекте<span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+        <article class="project" data-category="products">
+          <div class="project-art art-crm" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="mock-window">
+              <div class="mock-toolbar"><i></i><i></i><i></i></div>
+              <div class="mock-board"><div><i></i><b></b><b></b></div><div><i></i><b></b><b></b></div><div><i></i><b></b></div></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">CRM</p>
+            <h3>Внутренняя CRM</h3>
+            <p>Разрабатывал рабочие экраны для сотрудников и подключал их к API CRM.</p>
+            <button class="case-button" type="button" data-case="crm" hidden>О проекте<span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+        <article class="project" data-category="ai">
+          <div class="project-art art-agents" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="mock-nodes"><i></i><i></i><i></i><i></i><span></span></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">AI / MCP</p>
+            <h3>Собственные AI-агенты</h3>
+            <p>Писал агентов, подключал инструменты через MCP и продумывал, как показать результат в интерфейсе.</p>
+            <button class="case-button" type="button" data-case="agents" hidden>О проекте<span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+        <article class="project" data-category="products">
+          <div class="project-art art-hr" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="mock-window">
+              <div class="mock-toolbar"><i></i><i></i><i></i></div>
+              <div class="mock-profiles"><div><b></b><i></i><i></i></div><div><b></b><i></i><i></i></div><div><b></b><i></i><i></i></div></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">HR Tech</p>
+            <h3>Внутренняя HR-платформа</h3>
+            <p>Разрабатывал интерфейсы внутренних HR-инструментов для сотрудников и HR-команд.</p>
+            <button class="case-button" type="button" data-case="hr" hidden>О проекте<span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+        <article class="project" data-category="products">
+          <div class="project-art art-docs" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="mock-paper"><i></i><i></i><i></i><i></i></div>
+            <div class="mock-paper"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Корпоративные системы</p>
+            <h3>Электронный документооборот</h3>
+            <p>Работал над клиентской частью сервиса, в котором сотрудники ведут электронные документы.</p>
+            <button class="case-button" type="button" data-case="docs" hidden>О проекте<span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+        <article class="project" data-category="games">
+          <div class="project-art art-games" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="mock-game"><i></i><i></i><i></i><i></i><b></b></div>
+          </div>
+          <div class="project-body">
+            <p class="project-type">Web Games</p>
+            <h3>Браузерные игры</h3>
+            <p>Разрабатывал frontend браузерных игр и работал над отзывчивостью интерфейсов.</p>
+            <button class="case-button" type="button" data-case="games" hidden>О проекте<span aria-hidden="true">+</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-band" id="experience" aria-labelledby="experience-title">
+      <div class="container experience-grid">
+        <div>
+          <p class="eyebrow">Карьера</p>
+          <h2 id="experience-title">Опыт работы</h2>
+          <p class="section-intro">За шесть лет прошёл путь от вёрстки и WordPress до роли Senior / Lead Frontend Developer.</p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <p class="timeline-label">Последняя роль · 1win</p>
+            <h3>Senior / Lead Frontend Developer</h3>
+            <p>Разрабатывал сложные интерфейсы в команде, декомпозировал задачи, проводил code review и помогал новым разработчикам освоиться в проекте.</p>
+          </li>
+          <li>
+            <p class="timeline-label">Frontend-разработка</p>
+            <h3>React и Vue в командных проектах</h3>
+            <p>Разрабатывал веб-приложения, интегрировал интерфейсы с API и работал с Git в командах.</p>
+          </li>
+          <li>
+            <p class="timeline-label">Начало карьеры</p>
+            <h3>Вёрстка и WordPress</h3>
+            <p>Делал адаптивные лендинги, сайты на WordPress и первые веб-приложения.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <p class="eyebrow">Инструменты и подход</p>
+      <h2 id="skills-title">Навыки</h2>
+      <div class="skill-grid">
+        <article class="skill">
+          <h3>Frontend</h3>
+          <p>Компоненты, адаптивная вёрстка, производительность интерфейсов, оптимизация изображений и шрифтов.</p>
+          <ul class="tags" aria-label="Технологии frontend"><li>React</li><li>Vue</li><li>JavaScript</li><li>TypeScript</li><li>HTML / CSS</li></ul>
+        </article>
+        <article class="skill">
+          <h3>Интеграции и команда</h3>
+          <p>Связываю интерфейс с API, разбираю задачи на этапы, участвую в ревью и менторю разработчиков.</p>
+          <ul class="tags" aria-label="Инструменты и практики"><li>REST API</li><li>Git</li><li>Code review</li><li>Менторство</li></ul>
+        </article>
+        <article class="skill">
+          <h3>AI-разработка</h3>
+          <p>Использую AI в разработке и пишу собственных агентов с подключаемыми инструментами.</p>
+          <ul class="tags" aria-label="Инструменты AI"><li>Claude</li><li>ChatGPT</li><li>GitHub Copilot</li><li>LangChain</li><li>LangGraph</li><li>Vercel AI SDK</li><li>MCP</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-band" id="agents" aria-labelledby="agents-title">
+      <div class="container agents-grid">
+        <div>
+          <p class="eyebrow">Интерактивный пример</p>
+          <h2 id="agents-title">AI-агент в интерфейсе</h2>
+          <p class="section-intro">На примере входящей заявки можно посмотреть, что видит менеджер при успешном ответе модели и при сбое.</p>
+          <p class="demo-note">Демонстрация на учебных данных. Ответы имитируются в браузере.</p>
+        </div>
+        <div class="demo">
+          <p class="demo-label">Входящая заявка</p>
+          <p class="sample-request">«Нужен расчёт стоимости поставки материалов. Объём и сроки готовы обсудить.»</p>
+          <div class="demo-actions" role="group" aria-label="Сценарий ответа" hidden>
+            <button class="button button-primary" type="button" data-scenario="success">Получить черновик</button>
+            <button class="button button-secondary" type="button" data-scenario="failure">Проверить сбой</button>
+          </div>
+          <div class="demo-result" data-state="idle" role="status" aria-live="polite" aria-atomic="true">
+            <strong>Ответ менеджеру</strong>
+            <p>Выберите сценарий, чтобы увидеть результат.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Максим Огуров</strong><span>Frontend Developer</span></div>
+      <a href="#top">К началу</a>
+    </div>
+  </footer>
+
+  <dialog class="case-dialog" aria-labelledby="case-title">
+    <div class="dialog-head">
+      <p class="eyebrow" id="case-type"></p>
+      <form method="dialog"><button class="close-dialog" type="submit" aria-label="Закрыть проект" autofocus>×</button></form>
+    </div>
+    <h2 id="case-title"></h2>
+    <div id="case-content"></div>
+  </dialog>
+</body>
+</html>
